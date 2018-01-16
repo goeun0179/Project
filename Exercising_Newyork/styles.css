@@ -1,0 +1,54 @@
+body{
+    font-family: 'helvetica';
+    padding: 1rem 5rem;
+}
+
+p{
+    margin:0;
+    line-height:1.5;
+}
+
+.event{
+    background: rgba(255, 0, 0, 0.5);
+    border:3px solid tomato;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+section{
+    border: 5px solid blue;
+}
+
+#flex .event{
+    width: 300px;
+}
+
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tall{
+    height: 500px;
+}
+
+.box{
+  width: 300px;
+  height: 500px;
+  background: rgba(255, 200, 0, 0.5);
+  margin: auto;
+}
+
+#center{
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 255, 0.5);
+}
+
+@media screen and (max-width: 1200px){
+  #flex .event{
+    width: 50%;
+    background: rgba(0,255,0,5);
+
+    }
+  }

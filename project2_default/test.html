@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<title>test</title>
+</head>
+<body>
+  <!-- text -->
+  <section id="top">
+    <div class="event">
+    <h1>Revealing Index</h1>
+    </div>
+    <div class="event">
+    <p>
+    dienstag.den 7. Januar 1958
+    20. 15 Uhr grober tonhallesaal
+    12.volkskonzert
+    Der tonhalle-gesellschaft
+    Zurich
+    Als drittes Konzert
+    Im zyklus<muscia viva>
+    Letting hans osbad
+    Solisten Alfred baum Klavier
+    Andre jaunet flote
+    </p>
+    </div>
+    <div class="event">
+    <p>
+    Schweizersche erstauffurungen
+    Andre jolivert
+    Cinque danses rituels
+    Ernst kränke
+    Zweites Klavierkonzert
+    Lulu nono
+    Y susangre va vienne canton
+    Musik fur late und kleines Orchester
+    Bernd als Zimmermann
+    Sinfonie in einem Satz
+    </p>
+    </div>
+    <div class="event">
+    <p>
+    Karen fr 1.2 und 3
+    Vorvekauf tonallekasse hug
+    Heckling quoin
+    Genossenschaftsbuchandlung
+    </p>
+    </div>
+  </section>
+
+<!-- dropdown -->
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <div class="columns">
+        <div class="column">
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        </div>
+        <div class="column">
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        </div>
+        <div class="column">
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        <a href="#home"><div class="rectangle"></div></a>
+        <a href="#about"><div class="rectangle"></div></a>
+        <a href="#contact"><div class="rectangle"></div></a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

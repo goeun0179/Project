@@ -1,0 +1,119 @@
+body {
+  background: rgb(223, 300, 218);
+}
+
+h1 {
+  font-size: 200px;
+  line-height: 180px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  font-style: strong;
+  font-size: 20px;
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  padding-left: 40px;
+  text-align: center;
+  padding-left: 40px;
+
+}
+
+.singer{
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Karla', sans-serif;
+  padding-left: 40px;
+  width:300px;
+  heigh:500px;
+  text-align: center;
+}
+
+
+.moddi {
+  width: 600px;
+  height: 400px;
+  padding-left: 40px;
+}
+
+.theysay{
+  font-family: 'Vibur', cursive;  font-weight: bold;
+  font-size: 35px;
+  padding-left: 50px;
+  width:250px;
+  heigh:500px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.then{
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+
+.and{
+  float: right;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.last {
+  font-size: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  /* display: flex;
+  align-items: center; */
+  margin-left: 450px;
+  width: 500px;
+  height: 350px;
+}
+
+.copywright{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+
+}
+
+@media screen and (max-width: 1200px){
+  body {
+    background: blue;
+  }
+  p {
+    color: white;
+
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    color: white;
+  }
+}
