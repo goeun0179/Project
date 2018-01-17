@@ -48,54 +48,31 @@ h2 {
 .large {
   display: flex;
   flex: 1rem;
-  width: 93vw;
-  height: 200px;
-  background: black;
-  margin: 2rem;
+  width: 200vw;
+  	height: 60px;
+  	background: black;
+    margin-left: 300px;
+  	-moz-border-radius: 100px / 50px;
+  	-webkit-border-radius: 100px / 50px;
+  	border-radius: 100px / 50px;
+  }
 
 }
 
 .medium {
-  display: flex;
-  flex: 1rem;
-  width: 28.5vw;
+  width: 28.4vw;
 	height: 50px;
 	background: black;
   margin-left: 2rem;
 }
 
+
 .small {
-  display: flex;
-  width: 20.5vw;
-	height: 30px;
+  float: right;
+	height: 20px;
 	background: black;
-  margin-left: 2rem;
+
 }
-
-.smaller {
-  display: flex;
-  width: 15.5vw;
-	height: 15px;
-	background: black;
-  margin-left: 2rem;
-}
-
-.smallest {
-  display: flex;
-  width: 10.5vw;
-	height: 10px;
-	background: black;
-  margin-left: 2rem;
-}
-
-.smallest2 {
-  width: 5.5vw;
-	height: 5px;
-	background: black;
-  margin-left: 2rem;
-}
-
-
 
 
 /* ---shake---- */
@@ -112,50 +89,23 @@ h2 {
 
 .column {
   float: left;
-}
-
-#box {
   display: none;
 }
 
-#box2 {
-  /* width: 10.4vw;
-  height: 10.4vw; */
-  background-color: white;
-  /* display: none; */
-  display: none;
-}
-
-#box3 {
-  /* width: 10.4vw;
-  height: 10.4vw; */
-  background-color: white;
-  /* display: none; */
-  display: none;
-}
-
-#box4 {
-  /* width: 10.4vw;
-  height: 10.4vw; */
-  background-color: white;
-  /* display: none; */
-  display: none;
-}
-
-#box5 {
-  /* width: 10.4vw;
-  height: 10.4vw; */
-  background-color: white;
-  /* display: none; */
+.level2 {
+  float: right;
   display: none;
 }
 
 .reveal{
-	display: block !important;
+	display: block;
 }
 
 
-
+.box2 {
+  float: right;
+  background-color: white;
+}
 
 
 
