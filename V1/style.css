@@ -1,0 +1,380 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0; 
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---reset------------------------------- */
+/*
+body {
+	margin: 2rem;
+}
+
+h1 {
+	display: inline;
+	font-family: 'Volkhov', serif;
+	font-size: 3vw;
+
+}
+
+p {
+	font-family: 'Volkhov', serif;
+	font-size: 1.5vw;
+	line-height: 2rem;
+
+}
+
+italic {
+	font-family: 'Volkhov', serif;
+	font-style: italic;
+
+}
+
+#whole {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.ques {
+	margin-left: 10vw;
+
+}
+
+.left {
+
+	width: 40vw;
+
+}
+
+
+.line {
+	display: block;
+    margin:0;
+    margin-left: 4rem;
+}
+
+.right {
+
+	display: inline;
+	width: 40vw;
+}
+
+.works {
+	position: absolute;
+	margin-left: 18rem;
+
+
+	
+}
+
+.maintext {
+	margin-top: 5rem;
+}*/
+
+/*I love me some border-box*/
+* {
+    box-sizing: border-box;
+}
+/*This just stops me getting horizontal scrolling if anything overflows the width*/
+body {
+    overflow-x: hidden;
+}
+/*Just removing default browser padding/margin*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+  /*  color: #ebebeb;*/
+}
+
+h1 {
+	display: inline;
+	font-family: 'Volkhov', serif;
+	font-size: 3vw;
+	color: black;
+
+}
+
+
+
+p {
+	font-family: 'Volkhov', serif;
+	font-size: 1vw;
+	line-height: 1.5vw;
+	color:black;
+
+}
+
+italic {
+	font-style: italic;
+
+}
+
+/*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
+.Top {
+    padding: 1.5rem;
+    display: flex;
+   justify-content: space-between;
+    font-size: 3rem;
+    position: relative;
+    z-index: 10;
+    height: 185px;
+}
+
+.title {
+    display: inline;
+    font-family: 'Volkhov', serif;
+    font-size: 3vw;
+    letter-spacing: 0.05vw;
+    word-spacing: 0.2vw;
+    color: black;
+
+
+}
+
+.sketch {
+    position: absolute;
+    width: 7vw;
+    margin-left: 8vw;
+  blend-mode: multiply;
+}
+
+.intro {
+    font-family: 'Volkhov', serif;
+/*    font-family: sans-serif;
+*/    width: 22vw;
+    /*margin-left: 8.5vw;*/
+    font-size: 1vw;
+    line-height: 1.4vw;
+    
+
+
+}
+
+
+/*This is our main wrapping element, it's made 100vh high to ensure it is always the correct size and then moved into place and padded with negative margin and padding*/
+.Container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+}
+/*All the scrollable sections should overflow and be whatever height they need to be. As they are flex-items (due to being inside a flex container) they could be made to stretch full height at all times if needed.
+WebKit inertia scrolling is being added here for any present/future devices that are able to make use of it.
+*/
+.Left,
+.Right {
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+/*Entirely optional – just wanted to remove the scrollbar on WebKit browsers as I find them ugly*/
+.Left::-webkit-scrollbar,
+.Middle::-webkit-scrollbar,
+.Right::-webkit-scrollbar {
+    display: none;
+}
+/*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
+.Left {
+    flex:1;
+    width: 12.5rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: black;
+    padding: 1rem;
+    
+}
+
+/*.categories {
+    display: flex;
+    padding: 1vw;
+    justify-content: space-between;
+    font-family: 'Volkhov', serif;
+    font-size: 1vw;
+
+}*/
+
+.allworks {
+    cursor: pointer;
+}
+
+/*.departments {
+    cursor: pointer;
+}*/
+
+.eachdept {
+    font-family: 'Volkhov', serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.03rem;
+    height: 15rem;
+    /*background-color: green;*/
+
+}
+
+.all {
+	padding: 0.3rem;
+}
+
+
+.explanation {
+	padding: 0.5rem;
+	color: red;
+}
+
+
+.artTitle {
+     margin-top: 50px;
+
+}
+
+.maintext {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    font-family: sans-serif;
+    line-height: 1.4vw;
+}
+
+.artist {
+	padding-top: 0.5vw;
+	font-family: sans-serif;
+	font-size: 1vw;
+	font-style:strong;
+}
+
+
+h2 {
+	display: inline;
+	font-family: sans-serif;
+	font-size: 1.5vw;
+	font-style:strong;
+}
+
+.noneV{
+	display: none;
+}
+
+.appear{
+	display: block !important;
+}
+.disappear{
+	display: none !important;
+}
+
+
+
+.float {
+    float: left;
+    padding-left: 0.3vw;
+
+}
+
+.red{
+	color: red;
+}
+/*.black{
+	color: black;
+}*/
+
+.float:hover{
+	color:red;
+	cursor: pointer;
+}
+
+.float:target {
+	color:red;
+}
+
+/*----felxbox for each department-------
+*/
+.imgworks {
+	display: flex;
+}
+
+
+
+
+.Right {
+    flex:2;
+    width: 12.5rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.works {
+    position: fixed;
+    font-family: 'Volkhov', serif;
+    font-size: 3vw;
+    padding: 1vw;
+    width: 20vw;
+    transform: rotate(-90deg);
+    margin-top: 420px;
+    margin-left: 51.2vw;
+
+}
+
+
+
+
+#imgworks {
+/*    padding: 0.5vw;
+*/   
+}
+
+.img {
+    float: left;
+    padding: 1rem;
+    cursor:pointer;
+    width: -webkit-fill-available;
+}
+
+
+
+
+
+

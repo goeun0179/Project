@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---reset------------------------------- */
+
+body {
+  padding: 1.5rem;
+  color: black;
+  background: rgb(0,127,64);
+}
+
+h1 {
+  font-family: sans-serif;
+  font-family: 'Creepster', cursive;
+  font-size: 4vw;
+  letter-spacing: 3px;
+  line-height: auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 10vw;
+  margin: 2rem;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+img {
+  cursor: pointer;
+  height: 4vw;
+  width: 6vw;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+#revealtop {
+  display: none;
+}
+
+.top, .event {
+  display: flex;
+  width: 93vw;
+  flex: 1rem;
+  margin: 1.5vw;
+  font-family: sans-serif;
+  font-size: 1.5vw;
+}
+
+
+/* ----rectangel--- */
+
+#whole {
+  margin-top: 16vw;
+}
+
+.cir {
+  width: 100px;
+	height: 100px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin: 1rem;
+}
+
+.disappear {
+  display: none;
+
+}
+
+.largest {
+  cursor: pointer;
+  display: flex;
+  flex: 1rem;
+  width: 93vw;
+  height: 9vw;
+  background: black;
+  margin: 1.5vw;
+
+}
+
+
+
+.medium {
+  cursor: pointer;
+  display: flex;
+  width: 28.5vw;
+  height: 35px;
+  border-radius: 30px;
+  margin-bottom: 1vw;
+  background: black;
+  margin-left: 1.5vw;
+}
+
+
+
+.small {
+  cursor: pointer;
+  /*display: none;*/
+  width: 20.5vw;
+	height: 30px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+	background: black;
+  margin-left: 2rem;
+}
+
+.cute {
+  cursor: pointer;
+  display: flex;
+  width: 15.5vw;
+	height: 15px;
+  border-radius: 30px;
+	background: black;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pretty {
+  cursor: pointer;
+  display: flex;
+  width: 10.5vw;
+	height: 10px;
+  border-radius: 30px;
+	background: black;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+}
+ 
+.tiny {
+  cursor: pointer;
+  display: flex;
+  width: 5.5vw;
+	height: 5px;
+  border-radius: 30px;
+	background: black;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.min {
+  cursor: pointer;
+  display: flex;
+  width: 2.5vw;
+	height: 3px;
+  border-radius: 30px;
+	background: black;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* ---shake---- */
+.largest:hover, .largest:hover:focus {
+    /* box-shadow: 0px 8px 16px 0px rgba(240,250,0,0.4);
+    border: none; */
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+/* ---shake----- */
+
+
+.reveal{
+	display: inherit;
+}
+
+
+
+@-webkit-keyframes spaceboots {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---reset------------------------------- */
+
+
+body {
+  background-image: url("IMG_1589.png");
+  background-color: #fd5c31;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+p { font-family: 'Anton', sans-serif;
+  line-height: 1.5rem;
+  color: rgb(138, 15, 226);
+
+}
+
+h1 {
+  position:fixed;
+  font-family: 'Anton', sans-serif;
+  font-size: 6vw;
+  top: 2rem;
+  left: 2.5rem;
+  color: rgb(138, 15, 226);
+  z-index: 10;
+
+}
+
+h3 {
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  font-size: 10vw;
+  top: 18rem;
+  left: 20rem;
+  color: black;
+  transform: rotate(45deg);
+}
+
+
+.text {
+  position:absolute;
+  padding: 1rem;
+  border: 1px; black;
+  outline-style: solid;
+  top: 30rem;
+  left: 10rem;
+  width: 18rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: black;
+  text-align: center;
+
+}
+
+
+.float:hover{
+  box-shadow: 10px 10px 30px rgb(138, 15, 226);  
+}
+
+
+.bottom {
+  Position: fixed;
+  font-family: 'Anton', sans-serif;
+  font-size: 6vw;
+  bottom: 4.5rem;
+  right: 2.5rem;
+  color: rgb(138, 15, 226);
+  z-index: 10;
+
+}
+
+/*.big {
+  position: absolute;
+  top: 150rem;
+  right: 30rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 15vw;
+  top: 100rem;
+  left: 5rem;
+  color: black;
+  z-index: 0;
+}*/
+
+/* #biggest {
+  display:flaot;
+
+} */
+
+#draggable {
+  width: 35vw; height: 25vw;
+  cpadding: 0.5em;
+  background-color: none;
+  position: absolute;
+  top: 15rem;
+  left: 2.5rem;
+/*  box-shadow: 10px 10px 30px rgb(138, 15, 226);
+*/}
+
+#d_unit1 {
+  width: 25vw; height: 15vw;
+  cpadding: 0.5em; background-color: none;
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  z-index: 10;
+/*  box-shadow: 10px 50px 30px rgb(138, 15, 226);
+*/}
+
+#d_unit2 {
+  width: 50vw; height: 45vw;
+  cpadding: 0.5em; background-color: none;
+  position: absolute;
+  top: 800px;
+  right: 400px;
+  z-index: 1;
+}
+
+#d_unit3 {
+  width: 40vw; height: 20vw;
+  cpadding: 0.5em; background-color: none;
+  position: absolute;
+  top: 150vw;
+  right: 32vw;
+  z-index: 1;
+}
+
+
+#d_unit4 {
+  width: 40vw; height: 40vw;
+  cpadding: 0.5em; background-color: none;
+  position: absolute;
+  top: 190vw;
+  right: 30vw;
+}
+
+#d_unit5 {
+  width: 40vw; height: 40vw;
+  cpadding: 0.5em; background-color: none;
+  position: absolute;
+  top: 190vw;
+  right: 30vw;
+  z-index: 2;
+}
+
+
+
+/*
+/* introduction */
+/* .toggler {
+  width: 500px; height: 200px; }
+
+#effect {
+  width: 240px; height: 170px; padding: 0.4em; position: relative; }
+
+#effect p {
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  font-size: 1vw;
+  text-align: center;
+  margin: 0; padding: 0.4em; text-align: center; }
+
+  select, input[type="color" i][list] {
+    background-color: rgb(248, 248, 248);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
+} */ */
