@@ -116,7 +116,8 @@ italic {
 /*This just stops me getting horizontal scrolling if anything overflows the width*/
 body {
     overflow-x: hidden;
-}
+/*    background-color: yellow;
+*/}
 /*Just removing default browser padding/margin*/
 html,
 body {
@@ -128,7 +129,7 @@ body {
 h1 {
 	display: inline;
 	font-family: 'Volkhov', serif;
-	font-size: 3vw;
+	font-size: 6vw;
 	color: black;
 
 }
@@ -156,7 +157,7 @@ italic {
     font-size: 3rem;
     position: relative;
     z-index: 10;
-    height: 185px;
+    height: 12vw;
 }
 
 .title {
@@ -166,15 +167,17 @@ italic {
     letter-spacing: 0.05vw;
     word-spacing: 0.2vw;
     color: black;
+    margin-top: 2vw;
 
 
 }
 
 .sketch {
     position: absolute;
-    width: 7vw;
-    margin-left: 8vw;
-  blend-mode: multiply;
+    width: 15vw;
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+    blend-mode: multiply;
 }
 
 .intro {
@@ -182,10 +185,10 @@ italic {
 /*    font-family: sans-serif;
 */    width: 22vw;
     /*margin-left: 8.5vw;*/
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.4vw;
-    
-
+    margin-top: 0.5vw;
+    color: red;
 
 }
 
@@ -260,11 +263,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 
-.explanation {
-	padding: 0.5rem;
-	color: red;
-}
-
 
 .artTitle {
      margin-top: 50px;
@@ -295,6 +293,12 @@ h2 {
 
 .noneV{
 	display: none;
+}
+
+.explanation {
+    padding: 0.5rem;
+    margin-top: 12vw;
+    color: black;
 }
 
 .appear{
